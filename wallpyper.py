@@ -1,7 +1,7 @@
 import os 
 import random
 
-PATH = '/home/arthur/img/Wallpapers/gif/'# path to media
+PATH = '/home/arthur/img/Wallpapers/media/'# path to media
 
 files = os.listdir(PATH) 
 
