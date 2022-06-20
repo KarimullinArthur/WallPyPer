@@ -2,6 +2,12 @@
 
 from func import *
 
-if __name__ == '__main__':
-    kill()
+def start():
+    try:
+        kill()
+    except FileNotFoundError:
+       setWallPeper() 
     setWallPeper()
+
+if __name__ == '__main__':
+    start()
