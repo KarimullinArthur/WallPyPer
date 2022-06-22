@@ -1,11 +1,10 @@
 import os 
 import random
 
-PATH = '/home/arthur/img/Wallpapers/media/'# path to media
+from apscheduler.schedulers.background import BlockingScheduler   
 
+PATH = '/home/arthur/img/Wallpapers/test/'# path to media
 files = os.listdir(PATH) 
-
-media = random.choices(files)[0]
 
 def run(command,output=False):
     devNull = ">/dev/null"
@@ -20,6 +19,8 @@ def kill():
             run(f'kill {pid}')
 
 def setWallPeper():
+    media = random.choices(files)[0]
+
     if media[-4:] != '.gif':
         run(f"feh --bg-scale {PATH}{media}")
     else:
