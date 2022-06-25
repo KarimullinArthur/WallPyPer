@@ -11,6 +11,8 @@ def start():
     setWallPeper()
 
 if __name__ == '__main__':
+    start()
+
     sched = BlockingScheduler()
     sched.add_job(start,'interval',minutes=1)
     sched.start()    
