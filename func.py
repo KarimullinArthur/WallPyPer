@@ -3,7 +3,7 @@ import random
 
 from apscheduler.schedulers.background import BlockingScheduler   
 
-PATH = '/home/arthur/img/Wallpapers/test/'# path to media
+PATH = '/home/arthur/img/Wallpapers/wallpyper/'# path to media
 files = os.listdir(PATH) 
 
 def run(command,output=False):

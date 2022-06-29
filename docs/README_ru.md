@@ -18,7 +18,6 @@ Debian/Ubuntu:
 ```
 sudo apt install feh
 ```
-
 Arch:
 ```
 pacman -S feh
