@@ -51,7 +51,7 @@ The absolute path you cat get via command *pwd*
 
 ## Auto Start
 
-For **i3wm** add in yourself ~/.conifg/i3/config one string:
+For **i3wm** add in your ~/.conifg/i3/config one string:
 ```
 exec wallpyper
 ```
