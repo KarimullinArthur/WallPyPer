@@ -1,9 +1,7 @@
 import os 
 import random
 
-from apscheduler.schedulers.background import BlockingScheduler   
-
-PATH = '/home/arthur/img/Wallpapers/wallpyper/'# path to media
+PATH = '/home/arthur/img/Wallpapers/wallpyper/'# path to media (wallpaper)
 files = os.listdir(PATH) 
 
 def run(command,output=False):
@@ -14,14 +12,19 @@ def run(command,output=False):
         os.system(command + devNull)
 
 def kill():
-    with open('/tmp/wallpyper','r') as file:
+    '''
+    back4.sh will output artifacts if run more 2 processes
+    It function read PID in /tmp/back4.sh.pid, and kill process.
+    '''
+    with open('/tmp/back4.sh.pid','r') as file:
         for pid in file:
             run(f'kill {pid}')
 
-def setWallPeper():
+def setWallPaper():
     media = random.choices(files)[0]
 
     if media[-4:] != '.gif':
         run(f"feh --bg-scale {PATH}{media}")
     else:
-        run(f"back4.sh auto {PATH}{media} & echo $! > /tmp/wallpyper",True)
+        run(f"back4.sh auto {PATH}{media} & echo $! > /tmp/back4.sh.pid",True)
+        # > tmp/back4.sh.pid write PID for kill()

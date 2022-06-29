@@ -1,14 +1,15 @@
 #!/usr/bin/python3
 
+from apscheduler.schedulers.background import BlockingScheduler 
 from func import *
 
 def start():
     try:
         kill()
     except FileNotFoundError:
-        setWallPeper()
+        setWallPaper()
         
-    setWallPeper()
+    setWallPaper()
 
 if __name__ == '__main__':
     start()
