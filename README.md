@@ -13,6 +13,7 @@ Dependencies:
 
 * [feh](https://github.com/derf/feh)                                
 * [foo-Wallpaper-Feh-Gif ](https://github.com/thomas10-10/foo-Wallpaper-Feh-Gif)  
+* [apscheduler](https://github.com/agronholm/apscheduler)
 
 **feh** is most likely already in tour list of repositories.
 
@@ -28,6 +29,11 @@ pacman -S feh
 **foo-Wallpaper-feh-gif** is just bash script, you can download it [here](https://github.com/thomas10-10/foo-Wallpaper-Feh-Gif/blob/master/back4.sh)
 ```
 curl -L https://raw.githubusercontent.com/thomas10-10/foo-Wallpaper-Feh-Gif/master/install.sh | bash 
+```
+
+Install apscheduler
+```
+pip install apscheduler
 ```
 
 Then download WallPyPer and make main.py an run file.
