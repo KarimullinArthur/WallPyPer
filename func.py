@@ -1,7 +1,13 @@
 import os 
 import random
+import sys
+home = os.path.expanduser('~')
+sys.path.insert(0, home+"/.config")
+#sys.path.insert(0, '.config/wallpyper')
+from wallpyper import config
 
-PATH = '/home/arthur/img/Wallpapers/wallpyper/'# path to media (wallpaper)
+
+PATH = config.path_to_wallpapers
 files = os.listdir(PATH) 
 
 def run(command,output=False):
