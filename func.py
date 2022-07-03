@@ -1,14 +1,7 @@
+import json
 import os 
 import random
 import sys
-home = os.path.expanduser('~')
-sys.path.insert(0, home+"/.config")
-#sys.path.insert(0, '.config/wallpyper')
-from wallpyper import config
-
-
-PATH = config.path_to_wallpapers
-files = os.listdir(PATH) 
 
 def run(command,output=False):
     devNull = ">/dev/null"
@@ -26,7 +19,17 @@ def kill():
         for pid in file:
             run(f'kill {pid}')
 
+def configParsing():
+    pathToConfig = os.path.expanduser('~')+'/.config/wallpyper/config'
+    with open(pathToConfig) as file:
+        contentFile = file.read()
+        config = json.loads(contentFile)
+        return config
+
 def setWallPaper():
+    PATH = configParsing()['path_to_wallpapers']
+    files = os.listdir(PATH) 
+
     media = random.choices(files)[0]
 
     if media[-4:] != '.gif':
