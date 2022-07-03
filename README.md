@@ -3,7 +3,7 @@
 WallPyPer - is small utility, work via 
 [foo-Wallpaper-Feh-Gif ](https://github.com/thomas10-10/foo-Wallpaper-Feh-Gif) and [feh](https://github.com/derf/feh).
 
-<img src="./docs/media/demo.gif"  />
+<img src="https://user-images.githubusercontent.com/51211371/177040973-fca8885d-167e-4945-a4b6-48336e92e3c1.gif"  />
 
 WallPyPer can work with images and gifs.
 
