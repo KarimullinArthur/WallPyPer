@@ -26,21 +26,21 @@ Arch:
 pacman -S feh
 ```
 
-
+---
 
 **foo-Wallpaper-feh-gif** is just bash script, you can download it [here](https://github.com/thomas10-10/foo-Wallpaper-Feh-Gif/blob/master/back4.sh)
 ```
 curl -L https://raw.githubusercontent.com/thomas10-10/foo-Wallpaper-Feh-Gif/master/install.sh | bash 
 ```
 
-
+---
 
 Install apscheduler
 ```
 pip install apscheduler
 ```
 
-
+---
 
 Then download WallPyPer and make main.py an run file.
 ```
@@ -88,6 +88,7 @@ For **i3wm** add in your ~/.conifg/i3/config one string:
 ```
 exec wallpyper
 ```
+---
 
 Author - Karimullin Arthur
 
