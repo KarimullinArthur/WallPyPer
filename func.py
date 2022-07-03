@@ -21,16 +21,18 @@ def kill():
 
 def configParsing():
     pathToConfig = os.path.expanduser('~')+'/.config/wallpyper/config'
-    
-    with open(pathToConfig) as file:
-        contentFile = file.read()
-        config = json.loads(contentFile)
-        return config 
+    try: 
+        with open(pathToConfig) as file:
+            contentFile = file.read()
+            config = json.loads(contentFile)
+            return config 
+    except FileNotFoundError:
+        createConfig()
 
 def setWallPaper():
     config = configParsing()
 
-    PATH = config['path_to_wallpapers']
+    PATH = configParsing['path_to_wallpapers']
     files = os.listdir(PATH) 
     
     media = random.choices(files)[0]
