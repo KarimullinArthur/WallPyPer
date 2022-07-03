@@ -90,5 +90,4 @@ exec wallpyper
 ```
 
 Author - Karimullin Arthur
-
 		 Mail - KarimullinArthur@riseup.net

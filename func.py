@@ -21,20 +21,15 @@ def kill():
 
 def configParsing():
     pathToConfig = os.path.expanduser('~')+'/.config/wallpyper/config'
-    try: 
-        with open(pathToConfig) as file:
-            contentFile = file.read()
-            config = json.loads(contentFile)
-            return config 
-    except FileNotFoundError:
-        createConfig()
+    with open(pathToConfig) as file:
+        contentFile = file.read()
+        config = json.loads(contentFile)
+        return config
 
 def setWallPaper():
-    config = configParsing()
-
-    PATH = configParsing['path_to_wallpapers']
+    PATH = configParsing()['path_to_wallpapers']
     files = os.listdir(PATH) 
-    
+
     media = random.choices(files)[0]
 
     if media[-4:] != '.gif':
@@ -42,5 +37,3 @@ def setWallPaper():
     else:
         run(f"back4.sh auto {PATH}{media} & echo $! > /tmp/back4.sh.pid",True)
         # > tmp/back4.sh.pid write PID for kill()
-
-setWallPaper()
