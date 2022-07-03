@@ -78,8 +78,8 @@ Where *path_to_wallpapers* is *absolute* path to wallpapers.
 *second*, *minute* and *hour* set auto change via cron.
 
 
-(More infarmation about cron)[https://en.wikipedia.org/wiki/Cron]
-(crontab.guru)[https://crontab.guru]
+[More infarmation about cron](https://en.wikipedia.org/wiki/Cron)
+[crontab.guru](https://crontab.guru)
 
 ## Auto Start
 
