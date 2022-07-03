@@ -79,6 +79,7 @@ Where *path_to_wallpapers* is *absolute* path to wallpapers.
 
 
 [More infarmation about cron](https://en.wikipedia.org/wiki/Cron)
+
 [crontab.guru](https://crontab.guru)
 
 ## Auto Start
@@ -89,4 +90,5 @@ exec wallpyper
 ```
 
 Author - Karimullin Arthur
+
 		 Mail - KarimullinArthur@riseup.net
