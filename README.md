@@ -15,7 +15,7 @@ Dependencies:
 * [foo-Wallpaper-Feh-Gif ](https://github.com/thomas10-10/foo-Wallpaper-Feh-Gif)  
 * [apscheduler](https://github.com/agronholm/apscheduler)
 
-**feh** is most likely already in tour list of repositories.
+**feh** is most likely already in your list of repositories.
 
 Debiadn/Ubuntu:
 ```
