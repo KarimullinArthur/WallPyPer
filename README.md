@@ -68,8 +68,8 @@ and put this:
 ```
 {
          "path_to_wallpapers":"your_path",
-         "second":"*",
-         "minute":"*/1",
+         "second":"0",
+         "minute":"*",
          "hour":"*"
 }
 ``` 
