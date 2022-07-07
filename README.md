@@ -59,7 +59,7 @@ cd /usr/local/bin/
 ln -s <abs_path_to_download_repo>/main.py wallpyper
 ```
 
-The absolute path you cat get via command *pwd*
+The absolute path you can get via command *pwd*
 
 ## Configuration
 
